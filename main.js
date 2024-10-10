@@ -25,5 +25,8 @@ rowSubmit.addEventListener("submit", (event) => {
 
 const resetBtn = $("#reset");
 resetBtn.addEventListener("click", () => {
-    element.classList.remove("paintColor");
+    const paint = $$("#paint");
+    paint.forEach((element) => {
+        element.classList.remove("paintColor");
+    });
 });
