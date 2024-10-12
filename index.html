@@ -11,12 +11,19 @@
       <h1>Etch a Sketch</h1>
     </header>
     <div class="controlers-container">
-      <button id="reset">Reset</button>
-      <form id="rows-submit">
-        <input type="number" name="rows" id="rows" />
+      <button class="controler-style" id="reset">Reset</button>
+      <form class="form-styles" id="colorInput">
+        <input type="color" id="change-color" />
+        <button class="controler-style">Change</button>
+      </form>
+      <form id="rows-submit" class="form-styles">
+        <input type="number" name="rows" id="rows" placeholder="10" />
+        <button class="controler-style">Cuadros</button>
       </form>
     </div>
-    <div class="container"></div>
+    <div class="main">
+      <div class="container"></div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
