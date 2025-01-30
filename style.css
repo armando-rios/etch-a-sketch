@@ -88,3 +88,29 @@ header {
 #change-color {
   padding: 6px;
 }
+
+.error {
+  display: none;
+}
+
+@media (max-width: 620px), (max-height: 790px) {
+  .etch-a-sketch {
+    display: none;
+  }
+
+  .error {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .error h1 {
+    text-align: center;
+    color: orange;
+    font-size: 24px;
+    text-shadow: 0 0 10px white;
+  }
+}

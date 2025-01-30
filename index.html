@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Etch a Sketch</h1>
-    </header>
-    <div class="controlers-container">
-      <button class="controler-style" id="reset">Reset</button>
-      <form class="form-styles" id="colorInput">
-        <input type="color" id="change-color" class="controler-style"/>
-        <button class="controler-style">Color</button>
-      </form>
-      <form id="rows-submit" class="form-styles">
-        <input type="number" name="rows" id="rows" class="controler-style" placeholder="10" />
-        <button class="controler-style">Cuadros</button>
-      </form>
+    <div class="etch-a-sketch">
+      <header>
+        <h1>Etch a Sketch</h1>
+      </header>
+      <div class="controlers-container">
+        <button class="controler-style" id="reset">Reset</button>
+        <form class="form-styles" id="colorInput">
+          <input type="color" id="change-color" class="controler-style"/>
+          <button class="controler-style">Color</button>
+        </form>
+        <form id="rows-submit" class="form-styles">
+          <input type="number" name="rows" id="rows" class="controler-style" placeholder="10" />
+          <button class="controler-style">Cuadros</button>
+        </form>
+      </div>
+      <div class="main">
+        <div class="container"></div>
+      </div>
     </div>
-    <div class="main">
-      <div class="container"></div>
+    <div class="error hidden">
+      <h1>No disponible en esta resolucion</h1>
+      <h1>tu ventana puede ser muy pequenia</h1>
     </div>
     <script src="./main.js"></script>
   </body>
